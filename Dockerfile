@@ -1,6 +1,6 @@
 FROM oven/bun
 
-COPY bun.lockb . 
+COPY bun.lock . 
 COPY package.json . 
 COPY tsconfig.json .
 
