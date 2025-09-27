@@ -4,11 +4,9 @@ import './env';
 import { pb, superuserLogin } from './lib/pocketbase';
 import type { Datapoint } from './lib/types/datapoint';
 import { sleep } from 'bun';
-import {
-  analyzeIncrementalEnergy,
-  analyzeWheelSpeed,
-} from './processing/analyze-incremental-energy';
+import { analyzeIncrementalEnergy } from './processing/analyze-incremental-energy';
 import type { FilesResponse } from './lib/types/db';
+import { analyzeWheelSpeed } from './processing/analyze-wheel-speed';
 
 await superuserLogin(pb);
 
